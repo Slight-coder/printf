@@ -2,14 +2,14 @@
 
 /************************* PRINT UNSIGNED NUMBER *************************/
 /**
- * print_unsigned - Prints an unsigned number
- * @types: List a of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
+ * print_unsigned - Prints the unsigned number
+ * @types: List of arguments
+ * @buffer: the Buffer array to handle print
+ * @flags:  Calculates the number of active flags
+ * @width: gets the width
  * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed.
+ * @size: Size specifier to specify size
+ * Return: Number of chars printed and to be printed.
  */
 int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -39,12 +39,12 @@ int print_unsigned(va_list types, char buffer[],
 /**
  * print_octal - Prints an unsigned number in octal notation
  * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
+ * @buffer: Buffer array to handle the print
+ * @flags:  Calculates number of active flags
+ * @width: gets the width
  * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed
+ * @size: Size specifier to specify the size
+ * Return: Number of characters to be printed
  */
 int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -82,11 +82,11 @@ int print_octal(va_list types, char buffer[],
  * print_hexadecimal - Prints an unsigned number in hexadecimal notation
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed
+ * @flags:  Calculates number of active flags
+ * @width: gets the width
+ * @precision: the Precision specification
+ * @size: Size specifier specifying the size
+ * Return: Number of characters to be printed
  */
 int print_hexadecimal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -98,13 +98,13 @@ int print_hexadecimal(va_list types, char buffer[],
 /************* PRINT UNSIGNED NUMBER IN UPPER HEXADECIMAL **************/
 /**
  * print_hexa_upper - Prints an unsigned number in upper hexadecimal notation
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
+ * @types: List of arguments
+ * @buffer: Buffer array to handle the print
+ * @flags:  Calculates the number of active flags
+ * @width: gets the width
  * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed
+ * @size: Size specifier specifying the size
+ * Return: Number of characters to be printed
  */
 int print_hexa_upper(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -115,17 +115,17 @@ int print_hexa_upper(va_list types, char buffer[],
 
 /************** PRINT HEXX NUM IN LOWER OR UPPER **************/
 /**
- * print_hexa - Prints a hexadecimal number in lower or upper
- * @types: Lista of arguments
- * @map_to: Array of values to map the number to
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @flag_ch: Calculates active flags
- * @width: get width
+ * print_hexa - Prints a hexadecimal number in lower or upper case
+ * @types: List of arguments
+ * @map_to: Array of values to map the number 
+ * @buffer: Buffer array to handle the print
+ * @flags:  Calculates number of active flags
+ * @flag_ch: Calculates active number of flags
+ * @width: gets the width
  * @precision: Precision specification
- * @size: Size specifier
- * @size: Size specification
- * Return: Number of chars printed
+ * @size: Size specifier specifying the size
+ * @size: Size specification issued
+ * Return: Number of characters to be  printed
  */
 int print_hexa(va_list types, char map_to[], char buffer[],
 	int flags, char flag_ch, int width, int precision, int size)
