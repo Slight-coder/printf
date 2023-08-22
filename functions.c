@@ -3,13 +3,13 @@
 /************************* PRINT CHAR *************************/
 
 /**
- * print_char - Prints a char
- * @types: List a of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: Width
- * @precision: Precision specification
- * @size: Size specifier
+ * print_char - Prints a character
+ * @types: List of arguments
+ * @buffer: the Buffer array to handle print
+ * @flags:  Calculates the number of active flags
+ * @width: the Width
+ * @precision: the Precision specification
+ * @size: the Size specifier
  * Return: Number of chars printed
  */
 int print_char(va_list types, char buffer[],
@@ -21,8 +21,8 @@ int print_char(va_list types, char buffer[],
 }
 /************************* PRINT A STRING *************************/
 /**
- * print_string - Prints a string
- * @types: List a of arguments
+ * print_string - Prints the string
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
